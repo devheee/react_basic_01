@@ -35,7 +35,7 @@ padding: 20px;
 function App() {
 
   const [pic, setPic] = useState([]);
-  const [search, setSearch] = useState('water');
+  const [search, setSearch] = useState('sea');
   const getData = async () => {
     const data = await fetch(`https://pixabay.com/api/?key=21103852-9b5f4834542caaf4eef2c8533&q=${search}&image_type=photo`).then(r => r.json());
     console.log(data, data.hits[0].id);
